@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+
+    <!-- PAGE TITLE HERE -->
+    <title>Plexify - Branding Agency Tailwind CSS Template</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="DexignZone">
+    <meta name="robots" content="index, follow">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="keywords" content="Plexify, Branding Agency, Tailwind CSS, Responsive Website Template, SEO, UI Design, UX Design, Creative Agency, Web Development, Tailwind Theme, Modern Web Design, Portfolio Template, Marketing Website">
+    <meta name="description" content="Plexify is a modern Tailwind CSS Template designed for Branding Agency agencies, offering responsive layouts, sleek UI components, and powerful SEO-ready features.">
+
+    <meta property="og:title" content="Plexify - Branding Agency Tailwind CSS Template">
+    <meta property="og:description" content="Plexify is a modern Tailwind CSS Template designed for Branding Agency agencies, offering responsive layouts, sleek UI components, and powerful SEO-ready features.">
+    <meta property="og:image" content="https://plexify.dexignzone.com/tailwind/social-image.png">
+
+    <!-- TWITTER META -->
+    <meta name="twitter:title" content="Plexify - Branding Agency Tailwind CSS Template">
+    <meta name="twitter:description" content="Plexify is a modern Tailwind CSS Template designed for Branding Agency agencies, offering responsive layouts, sleek UI components, and powerful SEO-ready features.">
+    <meta name="twitter:image" content="https://plexify.dexignzone.com/tailwind/social-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FAVICONS ICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="/website-development/assets/favicon-C4ibZEOf.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" crossorigin href="/website-development/assets/tailwind-DGMgpVfm.css">
+</head>
+<body>
+    <div id="loading-area" class="pxl-loader style-3">
+      <div class="loading-dot-spinner">
+            <div class="loading-dot"></div>
+        </div>
+    </div>
+    
+    <div class="page-wraper">
+        
+        <!-- Header -->
+        <header class="absolute top-0 left-0 w-full z-9999 site-header">
+            <!-- main header -->
+            <div class="main-bar-wraper">
+                <div class="container">
+                    <div class="flex items-center">
+                        <div class="logo xl:me-20 grow">
+                            <div class="dark:hidden block">
+                                <a href="index.html">
+                                    <img src="data:image/png;base64,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" alt="">
+                                </a>
+                            </div>
+                            <div class="dark:block hidden">
+                                <a href="index.html">
+                                    <img src="data:image/png;base64,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" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-20">
+                            <a href="team-1.html" class="btn p-0 h-auto dark:text-white text-secondary font-normal group max-lg:hidden">
+                                <span class="pxl-button-text">Discuss the Project</span>
+                                <span class="block ms-5 overflow-hidden">
+                                    <svg class="group-hover:animate-toTopFromBottom" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="dark:stroke-white stroke-secondary" d="M5.83337 14.1667L14.1667 5.83334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path class="dark:stroke-white stroke-secondary" d="M5.83337 5.83334H14.1667V14.1667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                            <span class="menu-btn bg-white h-45 w-92 rounded-6xl cursor-pointer flex items-center justify-center group">
+                                <span class="space-y-3 flex flex-col items-end">
+                                    <span class="bg-black block h-2 w-19 duration-200 group-hover:w-28"></span>
+                                    <span class="bg-black block h-2 w-28 duration-200 group-hover:w-19"></span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="header-nav navbar-collapse full-sidenav navbar custom-scroll">
+                            <div class="flsbg pointer-events-none">
+                                <span class="bg-wrap">
+                                    <span class="noice-overlay"></span>
+                                </span>
+                                <span class="bg-wrap">
+                                    <span class="noice-overlay"></span>
+                                </span>
+                                <span class="bg-wrap">
+                                    <span class="noice-overlay"></span>
+                                </span>
+                                <span class="bg-wrap">
+                                    <span class="noice-overlay"></span>
+                                </span>
+                                <span class="bg-wrap">
+                                    <span class="noice-overlay"></span>
+                                </span>
+                                <span class="bg-wrap">
+                                    <span class="noice-overlay"></span>
+                                </span>
+                                <span class="bg-wrap">
+                                    <span class="noice-overlay"></span>
+                                </span>
+                                <span class="bg-wrap">
+                                    <span class="noice-overlay"></span>
+                                </span>
+                                <span class="bg-wrap">
+                                    <span class="noice-overlay"></span>
+                                </span>
+                                <span class="bg-wrap">
+                                    <span class="noice-overlay"></span>
+                                </span>
+                                <span class="bg-wrap">
+                                    <span class="noice-overlay"></span>
+                                </span>
+                            </div>
+                            <div class="container-fluid size-full flex flex-col">
+                                <div class="row flex-1 lg:h-[calc(100px-130px)]">
+                                    <div class="xl:w-[40%] lg:w-1/2 w-full flex flex-col justify-center lg:order-0 order-1">
+                                        <div class="3xl:ps-170 xl:ps-60 lg:py-0 py-40">
+                                            <div class="lg:flex items-center flex-wrap lg:px-0 sm:px-20 gap-20">
+                                                <div class="text-white lg:mb-50 mb-10">
+                                                    <h2 class="sm:text-2xl text-xl font-normal lg:mb-20"> Send a message </h2>
+                                                    <a class="text-lg dark:text-textlight text-bodytext block hover:underline" href="mailto:hello@example.com">hello@example.com</a>
+                                                    <a class="text-lg dark:text-textlight text-bodytext block hover:underline" href="mailto:info@example.com">info@example.com</a>
+                                                </div>
+                                                <div class="text-white lg:mb-50 mb-10">
+                                                    <h2 class="sm:text-2xl text-xl font-normal lg:mb-20"> Call us </h2>
+                                                    <a class="text-lg dark:text-textlight text-bodytext block hover:underline" href="tel:12345678910">+1 234 567 8910</a>
+                                                    <a class="text-lg dark:text-textlight text-bodytext block hover:underline" href="tel:12345678910">+1 987 654 3210</a>
+                                                </div>
+                                            </div>
+                                            <div class="lg:flex items-center flex-wrap lg:px-0 sm:px-20">
+                                                <div class="text-white lg:mb-50 mb-10">
+                                                    <h2 class="sm:text-2xl text-xl font-normal lg:mb-20"> Visit Us </h2>
+                                                    <a class="text-lg dark:text-textlight text-bodytext block hover:underline" href="javasript:void(0);">Chicago HQ Estica Cop. Macomb, MI 48042</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="xl:w-[60%] lg:w-1/2 w-full flex flex-col justify-center lg:h-full">
+                                        <div class="3xl:pe-260 lg:pe-60 lg:ps-70 lg:pt-0 pt-60 h-full lg:overflow-y-auto custom-scroll flex items-center">
+                                            <ul class="nav navbar-nav lg:pb-0 pb-30 lg:border-b-0 border-b dark:border-white/30 border-black/30 w-full">
+                                                <li><a href="index.html"><span>Home</span></a></li>
+                                                <li class="sub-menu-down"><a href="javascript:void(0);"><span>Pages</span></a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="about-us-1.html">About Us 1</a></li>
+                                                        <li><a href="about-us-2.html">About Us 2</a></li>
+                                                        <li><a href="/website-development/faq-1.html">FAQs 1</a></li>
+                                                        <li><a href="/website-development/faq-2.html">FAQs 2</a></li>
+                                                        <li><a href="team-1.html">Team 1</a></li>
+                                                        <li><a href="team-2.html">Team 2</a></li>
+                                                        <li><a href="error-404-1.html">Error-404 1</a></li>
+                                                        <li><a href="error-404-2.html">Error-404 2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-menu-down"><a href="javascript:void(0);"><span>Service</span></a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="/website-development/services-1.html">Service 1</a></li>
+                                                        <li><a href="/website-development/services-2.html">Service 2</a></li>
+                                                        <li><a href="/website-development/service-detail-1.html">Service Detail 1</a></li>
+                                                        <li><a href="/website-development/service-detail-2.html">Service Detail 2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-menu-down"><a href="javascript:void(0);"><span>Blog</span></a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="/website-development/blog-1.html">Blog 1</a></li>
+                                                        <li><a href="/website-development/blog-2.html">Blog 2</a></li>
+                                                        <li><a href="/website-development/blog-details-1.html">Blog Detail 1</a></li>
+                                                        <li><a href="/website-development/blog-details-2.html">Blog Detail 2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-menu-down"><a href="javascript:void(0);"><span>Shop</span></a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="/website-development/shop-standard.html">Shop Standard</a></li>
+                                                        <li><a href="/website-development/shop-cart.html">Shop Cart</a></li>
+                                                        <li><a href="/website-development/shop-wishlist.html">Shop Wishlist</a></li>
+                                                        <li><a href="/website-development/shop-list.html">Shop List</a></li>
+                                                        <li><a href="product-details.html">Product Details</a></li>
+                                                        <li><a href="product-detail-grid.html">Product Details Grid</a></li>
+                                                        <li><a href="product-details-slider.html">Product Details Slider</a></li>
+                                                        <li><a href="/website-development/registration.html">Registration</a></li>
+                                                        <li><a href="login.html">login</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-menu-down"><a href="javascript:void(0);"><span>Let’s talk</span></a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="/website-development/contact-us-1.html"><span>Contact Us 1</span></a></li>
+                                                        <li><a href="/website-development/contact-us-2.html"><span>Contact Us 2</span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:py-38 pt-20 sm:pb-50 pb-80 lg:px-0 sm:px-20 border-t dark:border-white/30 border-black/30 flex items-center justify-between">
+                                    <div class="relative flex items-center px-12 py-6 rounded-full duration-500 theme-btn cursor-pointer">
+                                        <span class="block p-10 rounded-full relative z-2 light-theme">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_29494_68)">
+                                                <path d="M19.4313 12.3808C19.3477 12.2974 19.2421 12.2394 19.1269 12.2135C19.0116 12.1876 18.8914 12.1949 18.7801 12.2346C17.2847 12.7677 15.6687 12.8656 14.1198 12.5169C12.571 12.1681 11.1529 11.3871 10.0303 10.2644C8.90775 9.14178 8.12676 7.72364 7.77811 6.17479C7.42946 4.62593 7.52745 3.00994 8.0607 1.51456C8.10033 1.40326 8.1076 1.28301 8.08167 1.16775C8.05573 1.05249 7.99767 0.94694 7.91419 0.863336C7.83072 0.779733 7.72526 0.7215 7.61004 0.695388C7.49482 0.669277 7.37456 0.676357 7.2632 0.715807C5.91501 1.19189 4.69154 1.96588 3.68383 2.98018C1.87734 4.78803 0.862798 7.23933 0.863281 9.79505C0.863765 12.3508 1.87924 14.8017 3.68641 16.6089C5.49358 18.416 7.94448 19.4315 10.5002 19.432C13.0559 19.4325 15.5072 18.4179 17.3151 16.6114C18.3295 15.6035 19.1035 14.3798 19.5795 13.0314C19.6188 12.9201 19.6257 12.7998 19.5995 12.6847C19.5733 12.5695 19.515 12.4642 19.4313 12.3808Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_29494_68">
+                                                <rect width="20" height="20" fill="white" transform="translate(0.240234 0.0551758)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span class="block p-10 rounded-full relative z-2 dark-theme">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_29494_70)">
+                                                <path d="M10.2402 3.10986C10.5638 3.10986 10.8262 2.84752 10.8262 2.52393V0.641113C10.8262 0.31752 10.5638 0.0551758 10.2402 0.0551758C9.91664 0.0551758 9.6543 0.31752 9.6543 0.641113V2.52393C9.6543 2.84752 9.91664 3.10986 10.2402 3.10986Z" fill="black"/>
+                                                <path d="M10.2402 17.0005C9.91664 17.0005 9.6543 17.2628 9.6543 17.5864V19.4692C9.6543 19.7928 9.91664 20.0552 10.2402 20.0552C10.5638 20.0552 10.8262 19.7928 10.8262 19.4692V17.5864C10.8262 17.2628 10.5638 17.0005 10.2402 17.0005Z" fill="black"/>
+                                                <path d="M19.6543 9.46924H17.7715C17.4479 9.46924 17.1855 9.73158 17.1855 10.0552C17.1855 10.3788 17.4479 10.6411 17.7715 10.6411H19.6543C19.9779 10.6411 20.2402 10.3788 20.2402 10.0552C20.2402 9.73158 19.9779 9.46924 19.6543 9.46924Z" fill="black"/>
+                                                <path d="M3.29492 10.0552C3.29492 9.73158 3.03258 9.46924 2.70898 9.46924H0.826172C0.502578 9.46924 0.240234 9.73158 0.240234 10.0552C0.240234 10.3788 0.502578 10.6411 0.826172 10.6411H2.70898C3.03258 10.6411 3.29492 10.3788 3.29492 10.0552Z" fill="black"/>
+                                                <path d="M15.9807 5.14395L17.3119 3.81281C17.5407 3.58399 17.5407 3.21301 17.3119 2.98418C17.0831 2.75535 16.7121 2.75535 16.4832 2.98418L15.1521 4.31531C14.9233 4.54414 14.9233 4.91512 15.1521 5.14395C15.3808 5.37274 15.7519 5.37285 15.9807 5.14395Z" fill="black"/>
+                                                <path d="M4.5008 14.9665L3.16967 16.2976C2.94084 16.5264 2.94084 16.8974 3.16967 17.1262C3.39842 17.355 3.76947 17.3551 3.9983 17.1262L5.32943 15.7951C5.55826 15.5663 5.55826 15.1953 5.32943 14.9665C5.10061 14.7376 4.72959 14.7376 4.5008 14.9665Z" fill="black"/>
+                                                <path d="M15.9807 14.9664C15.7519 14.7376 15.3809 14.7376 15.1521 14.9664C14.9233 15.1952 14.9233 15.5662 15.1521 15.7951L16.4832 17.1262C16.712 17.355 17.083 17.3551 17.3119 17.1262C17.5407 16.8974 17.5407 16.5264 17.3119 16.2976L15.9807 14.9664Z" fill="black"/>
+                                                <path d="M4.50084 5.14395C4.72959 5.37274 5.10064 5.37282 5.32947 5.14395C5.5583 4.91512 5.5583 4.54414 5.32947 4.31531L3.9983 2.98418C3.76951 2.75535 3.3985 2.75535 3.16967 2.98418C2.94084 3.21301 2.94084 3.58399 3.16967 3.81281L4.50084 5.14395Z" fill="black"/>
+                                                <path d="M10.2409 5.07599C7.49539 5.07599 5.26172 7.30966 5.26172 10.0552C5.26172 12.8007 7.49539 15.0343 10.2409 15.0343C12.9864 15.0343 15.2201 12.8007 15.2201 10.0552C15.2201 7.30966 12.9864 5.07599 10.2409 5.07599ZM10.2409 13.8625C8.14156 13.8625 6.43359 12.1545 6.43359 10.0552C6.43359 7.95583 8.14156 6.24786 10.2409 6.24786C12.3402 6.24786 14.0482 7.95583 14.0482 10.0552C14.0482 12.1545 12.3402 13.8625 10.2409 13.8625Z" fill="black"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_29494_70">
+                                                <rect width="20" height="20" fill="white" transform="translate(0.240234 0.0551758)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span class="active"></span>
+                                    </div>
+                                    <ul class="flex items-center gap-37">
+                                        <li>
+                                            <a class="dark:text-white text-dark" href="https://www.facebook.com">FB</a>
+                                        </li>
+                                        <li>
+                                            <a class="dark:text-white text-dark" href="https://x.com">X</a>
+                                        </li>
+                                        <li>
+                                            <a class="dark:text-white text-dark" href="https://www.instagram.com">IN</a>
+                                        </li>
+                                        <li>
+                                            <a class="dark:text-white text-dark" href="https://www.linkedin.com">LN</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" class="menu-close absolute rounded-full size-70 lg:dark:bg-white lg:bg-dark lg:top-40 top-0 lg:right-50 right-0 group cursor-pointer magneticBtn">
+                                <span class="duration-500 z-1 after:content-[''] after:absolute after:h-3 lg:after:w-32 after:w-20 after:rounded-full after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-mt-1 lg:dark:after:bg-secondary lg:after:bg-white dark:after:bg-white after:bg-black after:opacity-100 after:duration-200 after:-rotate-45 before:content-[''] before:absolute before:h-3 lg:before:w-32 before:w-20 before:rounded-full before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-mt-1 lg:dark:before:bg-secondary lg:before:bg-white dark:before:bg-white before:bg-black before:opacity-100 before:duration-200 before:rotate-45 group-hover:after:rotate-0 group-hover:before:rotate-0"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main header END -->
+        </header>
+        <!-- Header END -->
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+        
+                <div class="page-content">
+
+                    <section class="lg:pt-232 sm:pt-160 pt-120">
+                        <div class="container-full">
+                            <div class="row">
+                                <div class="w-full">
+                                    <div class="text-center px-10">
+                                        <h2 class="sm:text-7xl/70 text-4xl sm:mb-20 mb-10 headline">Our latest blog & article</h2>
+                                        <p class="sm:text-xl/30 text-base max-w-560 mx-auto">Explore our latest blog and articles for expert insights on web design, SEO, and digital trends.</p>
+                                    </div>
+                                </div>
+                                <div class="w-full md:!mt-220 !mt-160">
+                                    <div class="relative px-20 after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full sm:after:h-162 after:h-62 dark:after:bg-bodybg after:bg-bglight after:z-1">
+                                        <div class="swiper blog-swiper-2">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="overflow-hidden">
+                                                        <img src="/website-development/assets/pic15-BwF1NqJq.png" alt="" class="size-full rounded-2xl">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="overflow-hidden">
+                                                        <img src="/website-development/assets/pic15-BwF1NqJq.png" alt="" class="size-full rounded-2xl">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="overflow-hidden">
+                                                        <img src="/website-development/assets/pic15-BwF1NqJq.png" alt="" class="size-full rounded-2xl">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="overflow-hidden">
+                                                        <img src="/website-development/assets/pic15-BwF1NqJq.png" alt="" class="size-full rounded-2xl">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="overflow-hidden">
+                                                        <img src="/website-development/assets/pic15-BwF1NqJq.png" alt="" class="size-full rounded-2xl">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="overflow-hidden">
+                                                        <img src="/website-development/assets/pic15-BwF1NqJq.png" alt="" class="size-full rounded-2xl">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="overflow-hidden">
+                                                        <img src="/website-development/assets/pic15-BwF1NqJq.png" alt="" class="size-full rounded-2xl">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="overflow-hidden">
+                                                        <img src="/website-development/assets/pic15-BwF1NqJq.png" alt="" class="size-full rounded-2xl">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="overflow-hidden">
+                                                        <img src="/website-development/assets/pic15-BwF1NqJq.png" alt="" class="size-full rounded-2xl">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="overflow-hidden">
+                                                        <img src="/website-development/assets/pic15-BwF1NqJq.png" alt="" class="size-full rounded-2xl">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section>
+                        <div class="lg:pt-0 sm:pb-73 py-50">
+                            <div class="container">
+                                <div class="grid grid-cols-12 gap-20 loadmore-content">
+                                    <div class="lg:col-span-4 sm:col-span-6 col-span-12 sm:mb-40 mb-20">
+                                        <div class="group blog-card">
+                                            <div class="sm:mb-30 mb-20 overflow-hidden rounded-2xl">
+                                                <img src="/website-development/assets/pic9-CTqWIydy.png" alt="" class="w-full duration-500 group-hover:scale-[1.03] group-hover:translate-x-3 rounded-2xl">
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h4 class="text-2xxl/35 mb-5 font-base normal-case font-medium">
+                                                        <a class="hover:text-primary link-hover" href="/website-development/blog-details-1.html">
+                                                            Master the Art of Visual
+                                                        </a>
+                                                    </h4>
+                                                    <ul>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight pe-10 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">15 May 2025</li>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight ps-20 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">By Liam Anderson</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="/website-development/blog-details-1.html" class="size-60 min-w-60 flex items-center justify-center rounded-full bg-white transform xl:-translate-x-full xl:rotate-[-360deg] xl:opacity-0 group-hover:translate-x-0 group-hover:rotate-0 group-hover:opacity-100 overflow-hidden group/second">
+                                                    <svg class="group-hover/second:animate-toTopFromBottom" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="stroke-black" d="M7.5 17L17.5 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path class="stroke-black" d="M7.5 7H17.5V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lg:col-span-4 sm:col-span-6 col-span-12 sm:mb-40 mb-20">
+                                        <div class="group blog-card">
+                                            <div class="sm:mb-30 mb-20 overflow-hidden rounded-2xl">
+                                                <img src="/website-development/assets/pic3-uA5CIQzk.png" alt="" class="w-full duration-500 group-hover:scale-[1.03] group-hover:translate-x-3 rounded-2xl">
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h4 class="text-2xxl/35 mb-5 font-base normal-case font-medium">
+                                                        <a class="hover:text-primary link-hover" href="/website-development/blog-details-1.html">
+                                                            Transform Your Ideas
+                                                        </a>
+                                                    </h4>
+                                                    <ul>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight pe-10 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">15 May 2025</li>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight ps-20 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">By Ethan Bennett</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="/website-development/blog-details-1.html" class="size-60 min-w-60 flex items-center justify-center rounded-full bg-white transform xl:-translate-x-full xl:rotate-[-360deg] xl:opacity-0 group-hover:translate-x-0 group-hover:rotate-0 group-hover:opacity-100 overflow-hidden group/second">
+                                                    <svg class="group-hover/second:animate-toTopFromBottom" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="stroke-black" d="M7.5 17L17.5 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path class="stroke-black" d="M7.5 7H17.5V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lg:col-span-4 sm:col-span-6 col-span-12 sm:mb-40 mb-20">
+                                        <div class="group blog-card">
+                                            <div class="sm:mb-30 mb-20 overflow-hidden rounded-2xl">
+                                                <img src="/website-development/assets/pic3-uA5CIQzk.png" alt="" class="w-full duration-500 group-hover:scale-[1.03] group-hover:translate-x-3 rounded-2xl">
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h4 class="text-2xxl/35 mb-5 font-base normal-case font-medium">
+                                                        <a class="hover:text-primary link-hover" href="/website-development/blog-details-1.html">
+                                                            Master the Art of Visual
+                                                        </a>
+                                                    </h4>
+                                                    <ul>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight pe-10 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">15 May 2025</li>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight ps-20 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">By Mason Hayes</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="/website-development/blog-details-1.html" class="size-60 min-w-60 flex items-center justify-center rounded-full bg-white transform xl:-translate-x-full xl:rotate-[-360deg] xl:opacity-0 group-hover:translate-x-0 group-hover:rotate-0 group-hover:opacity-100 overflow-hidden group/second">
+                                                    <svg class="group-hover/second:animate-toTopFromBottom" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="stroke-black" d="M7.5 17L17.5 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path class="stroke-black" d="M7.5 7H17.5V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lg:col-span-4 sm:col-span-6 col-span-12 sm:mb-40 mb-20">
+                                        <div class="group blog-card">
+                                            <div class="sm:mb-30 mb-20 overflow-hidden rounded-2xl">
+                                                <img src="/website-development/assets/pic9-CTqWIydy.png" alt="" class="w-full duration-500 group-hover:scale-[1.03] group-hover:translate-x-3 rounded-2xl">
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h4 class="text-2xxl/35 mb-5 font-base normal-case font-medium">
+                                                        <a class="hover:text-primary link-hover" href="/website-development/blog-details-1.html">
+                                                            Where Creativity Meets
+                                                        </a>
+                                                    </h4>
+                                                    <ul>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight pe-10 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">15 May 2025</li>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight ps-20 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">By Henry Walker</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="/website-development/blog-details-1.html" class="size-60 min-w-60 flex items-center justify-center rounded-full bg-white transform xl:-translate-x-full xl:rotate-[-360deg] xl:opacity-0 group-hover:translate-x-0 group-hover:rotate-0 group-hover:opacity-100 overflow-hidden group/second">
+                                                    <svg class="group-hover/second:animate-toTopFromBottom" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="stroke-black" d="M7.5 17L17.5 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path class="stroke-black" d="M7.5 7H17.5V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lg:col-span-4 sm:col-span-6 col-span-12 sm:mb-40 mb-20">
+                                        <div class="group blog-card">
+                                            <div class="sm:mb-30 mb-20 overflow-hidden rounded-2xl">
+                                                <img src="/website-development/assets/pic9-CTqWIydy.png" alt="" class="w-full duration-500 group-hover:scale-[1.03] group-hover:translate-x-3 rounded-2xl">
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h4 class="text-2xxl/35 mb-5 font-base normal-case font-medium">
+                                                        <a class="hover:text-primary link-hover" href="/website-development/blog-details-1.html">
+                                                            Master the Art of Visual
+                                                        </a>
+                                                    </h4>
+                                                    <ul>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight pe-10 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">15 May 2025</li>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight ps-20 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">By Liam Anderson</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="/website-development/blog-details-1.html" class="size-60 min-w-60 flex items-center justify-center rounded-full bg-white transform xl:-translate-x-full xl:rotate-[-360deg] xl:opacity-0 group-hover:translate-x-0 group-hover:rotate-0 group-hover:opacity-100 overflow-hidden group/second">
+                                                    <svg class="group-hover/second:animate-toTopFromBottom" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="stroke-black" d="M7.5 17L17.5 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path class="stroke-black" d="M7.5 7H17.5V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lg:col-span-4 sm:col-span-6 col-span-12 sm:mb-40 mb-20">
+                                        <div class="group blog-card">
+                                            <div class="sm:mb-30 mb-20 overflow-hidden rounded-2xl">
+                                                <img src="/website-development/assets/pic9-CTqWIydy.png" alt="" class="w-full duration-500 group-hover:scale-[1.03] group-hover:translate-x-3 rounded-2xl">
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h4 class="text-2xxl/35 mb-5 font-base normal-case font-medium">
+                                                        <a class="hover:text-primary link-hover" href="/website-development/blog-details-1.html">
+                                                            How to Create a Stunning
+                                                        </a>
+                                                    </h4>
+                                                    <ul>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight pe-10 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">15 May 2025</li>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight ps-20 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">By Ethan Bennett</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="/website-development/blog-details-1.html" class="size-60 min-w-60 flex items-center justify-center rounded-full bg-white transform xl:-translate-x-full xl:rotate-[-360deg] xl:opacity-0 group-hover:translate-x-0 group-hover:rotate-0 group-hover:opacity-100 overflow-hidden group/second">
+                                                    <svg class="group-hover/second:animate-toTopFromBottom" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="stroke-black" d="M7.5 17L17.5 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path class="stroke-black" d="M7.5 7H17.5V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lg:col-span-4 sm:col-span-6 col-span-12 sm:mb-40 mb-20">
+                                        <div class="group blog-card">
+                                            <div class="sm:mb-30 mb-20 overflow-hidden rounded-2xl">
+                                                <img src="/website-development/assets/pic3-uA5CIQzk.png" alt="" class="w-full duration-500 group-hover:scale-[1.03] group-hover:translate-x-3 rounded-2xl">
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h4 class="text-2xxl/35 mb-5 font-base normal-case font-medium">
+                                                        <a class="hover:text-primary link-hover" href="/website-development/blog-details-1.html">
+                                                            Transform Your Ideas
+                                                        </a>
+                                                    </h4>
+                                                    <ul>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight pe-10 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">15 May 2025</li>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight ps-20 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">By Mason Hayes</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="/website-development/blog-details-1.html" class="size-60 min-w-60 flex items-center justify-center rounded-full bg-white transform xl:-translate-x-full xl:rotate-[-360deg] xl:opacity-0 group-hover:translate-x-0 group-hover:rotate-0 group-hover:opacity-100 overflow-hidden group/second">
+                                                    <svg class="group-hover/second:animate-toTopFromBottom" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="stroke-black" d="M7.5 17L17.5 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path class="stroke-black" d="M7.5 7H17.5V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lg:col-span-4 sm:col-span-6 col-span-12 sm:mb-40 mb-20">
+                                        <div class="group blog-card">
+                                            <div class="sm:mb-30 mb-20 overflow-hidden rounded-2xl">
+                                                <img src="/website-development/assets/pic9-CTqWIydy.png" alt="" class="w-full duration-500 group-hover:scale-[1.03] group-hover:translate-x-3 rounded-2xl">
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h4 class="text-2xxl/35 mb-5 font-base normal-case font-medium">
+                                                        <a class="hover:text-primary link-hover" href="/website-development/blog-details-1.html">
+                                                            Master the Art of Visual
+                                                        </a>
+                                                    </h4>
+                                                    <ul>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight pe-10 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">15 May 2025</li>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight ps-20 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">By Henry Walker</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="/website-development/blog-details-1.html" class="size-60 min-w-60 flex items-center justify-center rounded-full bg-white transform xl:-translate-x-full xl:rotate-[-360deg] xl:opacity-0 group-hover:translate-x-0 group-hover:rotate-0 group-hover:opacity-100 overflow-hidden group/second">
+                                                    <svg class="group-hover/second:animate-toTopFromBottom" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="stroke-black" d="M7.5 17L17.5 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path class="stroke-black" d="M7.5 7H17.5V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lg:col-span-4 sm:col-span-6 col-span-12 sm:mb-40 mb-20">
+                                        <div class="group blog-card">
+                                            <div class="sm:mb-30 mb-20 overflow-hidden rounded-2xl">
+                                                <img src="/website-development/assets/pic9-CTqWIydy.png" alt="" class="w-full duration-500 group-hover:scale-[1.03] group-hover:translate-x-3 rounded-2xl">
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h4 class="text-2xxl/35 mb-5 font-base normal-case font-medium">
+                                                        <a class="hover:text-primary link-hover" href="/website-development/blog-details-1.html">
+                                                            Transform Your Ideas
+                                                        </a>
+                                                    </h4>
+                                                    <ul>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight pe-10 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">15 May 2025</li>
+                                                        <li class="text-base/16 text-bodytext dark:text-textlight ps-20 inline-block relative before:content-[''] before:absolute before:h-1 before:w-10 before:left-0 before:top-1/2 before:-translate-y-1/2 first:before:hidden before:bg-bodytext">By Nathan Brooks</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="/website-development/blog-details-1.html" class="size-60 min-w-60 flex items-center justify-center rounded-full bg-white transform xl:-translate-x-full xl:rotate-[-360deg] xl:opacity-0 group-hover:translate-x-0 group-hover:rotate-0 group-hover:opacity-100 overflow-hidden group/second">
+                                                    <svg class="group-hover/second:animate-toTopFromBottom" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="stroke-black" d="M7.5 17L17.5 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path class="stroke-black" d="M7.5 7H17.5V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-12 gap-20 sm:mt-50 mt-20">
+                                    <div class="col-span-12 text-center">
+                                        <a href="/website-development/services-1.html" class="btn btn-white border-transparent flairBtn group dz-load-more" data-block="button">
+                                            <span class="button-flair-wrapper">
+                                                <span class="button-flair"></span>
+                                            </span>
+                                            <span class="button-label group-hover:text-white relative" rel="assets/ajax/blog-1.html">Load More</span>
+                                            <span class="block ms-10 overflow-hidden relative">
+                                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="group-hover:stroke-white" d="M11 2.32227V5.98893" stroke="#191B1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path class="group-hover:stroke-white" d="M14.8501 7.6388L17.5084 4.98047" stroke="#191B1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path class="group-hover:stroke-white" d="M16.5 11.4893H20.1667" stroke="#191B1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path class="group-hover:stroke-white" d="M14.8501 15.3389L17.5084 17.9972" stroke="#191B1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path class="group-hover:stroke-white" d="M11 16.9893V20.6559" stroke="#191B1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path class="group-hover:stroke-white" d="M4.4917 17.9972L7.15003 15.3389" stroke="#191B1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path class="group-hover:stroke-white" d="M1.8335 11.4893H5.50016" stroke="#191B1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path class="group-hover:stroke-white" d="M4.4917 4.98047L7.15003 7.6388" stroke="#191B1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    
+        
+                    <!-- footer -->
+                    <footer class="overflow-hidden sm:pt-80 pt-30">
+                        <div  class="xl:mx-80 sm:mx-50 mx-20 xl:rounded-[80px] sm:rounded-6xl rounded-2xl dark:bg-card bg-white relative z-1 after:content-[''] after:absolute after:top-0 after:left-0 after:size-full after:opacity-40 after:bg-no-repeat after:pointer-events-none after:bg-cover after:bg-[url('../images/background/bg2.png')] after:-z-1">
+                            <div class="xl:pt-140 xl:px-0 sm:px-50 lg:pt-80 pt-40">
+                                <div class="container relative z-2">
+                                    <div class="xl:mb-120 lg:mb-80 sm:mb-50 mb-30 xl:max-w-900">
+                                        <h2 class="xl:text-7xxl/90 lg:text-6xl sm:text-5xl xs:text-4xxl text-4xl font-bold dark:text-white text-primary headline">Let's make something great work together. </h2>
+                                    </div>
+                                    <div class="grid grid-cols-12 gap-20">
+                                        <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+                                            <h4 class="sm:text-2xl/31 text-xl lg:mb-25 sm:mb-10 mb-5">Call us </h4>
+                                            <ul>
+                                                <li class="pb-5">
+                                                    <a class="dark:text-white/70 text-black/75 sm:text-lg/23 text-base inline-block hover:text-primary link-hover" href="tel:+12345678910">+1 234 567 8910</a>
+                                                </li>
+                                                <li class="pb-5">
+                                                    <a class="dark:text-white/70 text-black/75 sm:text-lg/23 text-base inline-block hover:text-primary link-hover" href="tel:+9876543210">+1 987 654 3210</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+                                            <h4 class="sm:text-2xl/31 text-xl lg:mb-25 sm:mb-10 mb-5">Send a Message</h4>
+                                            <ul>
+                                                <li class="pb-5">
+                                                    <a class="dark:text-white/70 text-black/75 sm:text-lg/23 text-base inline-block hover:text-primary underline" href="mailto:hello@example.com">hello@example.com</a>
+                                                </li>
+                                                <li class="pb-5">
+                                                    <a class="dark:text-white/70 text-black/75 sm:text-lg/23 text-base inline-block hover:text-primary underline" href="mailto:info@example.com">info@example.com</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+                                            <h4 class="sm:text-2xl/31 text-xl lg:mb-25 sm:mb-10 mb-5">Company</h4>
+                                            <ul>
+                                                <li class="lg:pb-15 pb-5">
+                                                    <a class="dark:text-white/70 text-black/75 sm:text-lg/23 text-base inline-block hover:text-primary link-hover" href="index.html">Home</a>
+                                                </li>
+                                                <li class="lg:pb-15 pb-5">
+                                                    <a class="dark:text-white/70 text-black/75 sm:text-lg/23 text-base inline-block hover:text-primary link-hover" href="about-us-1.html">About us</a>
+                                                </li>
+                                                <li class="lg:pb-15 pb-5">
+                                                    <a class="dark:text-white/70 text-black/75 sm:text-lg/23 text-base inline-block hover:text-primary link-hover" href="/website-development/service.html">Service</a>
+                                                </li>
+                                                <li class="lg:pb-15 pb-5">
+                                                    <a class="dark:text-white/70 text-black/75 sm:text-lg/23 text-base inline-block hover:text-primary link-hover" href="about-us-1.html">Portfolio</a>
+                                                </li>
+                                                <li class="lg:pb-15 pb-5">
+                                                    <a class="dark:text-white/70 text-black/75 sm:text-lg/23 text-base inline-block hover:text-primary link-hover" href="/website-development/service.html">Let’s talk</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+                                            <h4 class="sm:text-2xl/31 text-xl lg:mb-25 sm:mb-10 mb-5">Services</h4>
+                                            <ul>
+                                                <li class="lg:pb-15 pb-5">
+                                                    <a class="dark:text-white/70 text-black/75 sm:text-lg/23 text-base inline-block hover:text-primary link-hover" href="index.html">UI/UX Design</a>
+                                                </li>
+                                                <li class="lg:pb-15 pb-5">
+                                                    <a class="dark:text-white/70 text-black/75 sm:text-lg/23 text-base inline-block hover:text-primary link-hover" href="about-us-1.html">Web Design</a>
+                                                </li>
+                                                <li class="lg:pb-15 pb-5">
+                                                    <a class="dark:text-white/70 text-black/75 sm:text-lg/23 text-base inline-block hover:text-primary link-hover" href="/website-development/service.html">Branding</a>
+                                                </li>
+                                                <li class="lg:pb-15 pb-5">
+                                                    <a class="dark:text-white/70 text-black/75 sm:text-lg/23 text-base inline-block hover:text-primary link-hover" href="/website-development/service.html">Development</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xl:py-60 py-30 sm:px-20">
+                                <div class="container">
+                                    <div class="flex justify-between sm:items-center max-sm:flex-col-reverse">
+                                        <p class="dark:text-white/50 text-black/50 font-light uppercase">© <span class="current-year"> 2025</span>  ·  <a href="https://www.dexignzone.com/" class="dark:text-white text-dark hover:text-primary">DexignZone</a> · Tailwind Template </p>
+                                        <div class="absolute -bottom-40 right-[12%] max-sm:hidden">
+                                            <a id="scrolltopbtn" href="javascript:void(0);" class="lg:w-92 lg:h-167 p-10 rounded-6xl dark:bg-white bg-secondary flex items-center justify-center duration-500 hover:bg-black dark:hover:bg-bglight">
+                                                <span class="sm:w-43 sm:h-84 w-25 h-54">
+                                                    <svg class="size-full" viewBox="0 0 43 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="dark:fill-secondary fill-white" d="M21 4H23V84H21V4Z" fill="black"/>
+                                                        <path class="dark:stroke-secondary stroke-white" d="M1 23C12.4 18.5078 17.2688 14.0332 21.9713 3C26.2738 14.4148 30.2419 18.8641 42 23" stroke="black" stroke-width="2"/>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:mt-100 sm:mt-60 mt-40 overflow-hidden max-sm:pb-80">
+                            <div class="flex items-center sm:gap-100 gap-60 flex-nowrap animate-ticker">
+                                <div class="text-center inline-block -mb-10">
+                                    <span class="md:text-14xxl text-8xxl/87 dark:text-white text-secondary font-bold uppercase">Creative</span>
+                                </div>
+                                <div class="text-center inline-block -mb-10">
+                                    <span class="md:text-14xxl text-8xxl/87 dark:text-white text-secondary font-bold uppercase">Agency</span>
+                                </div>
+                                <div class="text-center inline-block -mb-10">
+                                    <span class="md:text-14xxl text-8xxl/87 dark:text-white text-secondary font-bold uppercase">Creative</span>
+                                </div>
+                                <div class="text-center inline-block -mb-10">
+                                    <span class="md:text-14xxl text-8xxl/87 dark:text-white text-secondary font-bold uppercase">Agency</span>
+                                </div>
+                                <div class="text-center inline-block -mb-10">
+                                    <span class="md:text-14xxl text-8xxl/87 dark:text-white text-secondary font-bold uppercase">Creative</span>
+                                </div>
+                                <div class="text-center inline-block -mb-10">
+                                    <span class="md:text-14xxl text-8xxl/87 dark:text-white text-secondary font-bold uppercase">Agency</span>
+                                </div>
+                                <div class="text-center inline-block -mb-10">
+                                    <span class="md:text-14xxl text-8xxl/87 dark:text-white text-secondary font-bold uppercase">Creative</span>
+                                </div>
+                                <div class="text-center inline-block -mb-10">
+                                    <span class="md:text-14xxl text-8xxl/87 dark:text-white text-secondary font-bold uppercase">Agency</span>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- footer END -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <button id="scrollProgress" title="Scroll to top"
+    class="fixed z-999 right-20 bottom-20 size-40 rounded-full dark:bg-white dark:text-black bg-bodybg text-white cursor-pointer opacity-0 pointer-events-none duration-500 flex items-center justify-center">
+    <span class="icon text-xs relative z-1"><i class="fa-solid fa-chevron-up"></i></span>
+    <svg class="absolute top-0 left-0 -rotate-90" width="40" height="40">
+        <circle class="dark:stroke-black stroke-white" cx="20" cy="20" r="17" stroke="#000" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-dasharray="100.53" stroke-dashoffset="100.53"></circle>
+    </svg>
+</button>
+    
+    <script data-vite-no-bundle src="/website-development/assets/vendor/gsap/gsap.min.js"></script>
+    <script data-vite-no-bundle src="/website-development/assets/vendor/gsap/MotionPathPlugin.min.js"></script>
+    <script data-vite-no-bundle src="/website-development/assets/vendor/gsap/ScrollTrigger.min.js"></script>
+    <script data-vite-no-bundle src="/website-development/assets/vendor/gsap/ScrollSmoother.js"></script>
+    <script data-vite-no-bundle src="/website-development/assets/vendor/SplitText/SplitText.min.js"></script>
+    <script data-vite-no-bundle src="/website-development/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    
+    <script data-vite-no-bundle src='https://www.google.com/recaptcha/api.js'></script> 
+    <script data-vite-no-bundle src="/website-development/assets/js/animation.js"></script>
+    <script data-vite-no-bundle src="/website-development/assets/vendor/wow/wow.js"></script>
+    <script data-vite-no-bundle src="/website-development/assets/js/dz.carousel.js"></script>
+    <script data-vite-no-bundle src="/website-development/assets/js/dz.ajax.js"></script>
+    <script data-vite-no-bundle src="/website-development/assets/js/custom.js"></script>
+    
+</body>
+</html>
